@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- SeeMikeReact CSS -->
+		<link rel="stylesheet" href="/css/seemikereact.css">
+				
+		<title>Rich's Solitaire</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Rich's Solitaire</h1>
+			<button id="show-rules" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rulesOfPlay">Rules</button>
+			<button id="play-game" type="button" onclick="playIt()" class="btn btn-primary btn-lg">Play</button>
+		</header>
+		
+		<div id="cards">
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="rulesOfPlay" tabindex="-1" role="dialog" aria-labelledby="rulesOfPlayTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h3 class="modal-title" id="rulesOfPlayTitle">How to Play Rich's Solitaire</h3>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<h4>Who is Rich??</h4>
+				<p>
+					Rich is someone I grew up with. He invented this game when we 
+					were kids. I give credit where credit is due.
+				</p>
+				<h4>Playing in Real Life</h4>
+				<p>
+					Shuffle a deck of cards. Deal cards from the top of the deck one 
+					at a time, turning each card face up as you deal. In addition, 
+					as you turn each card up, say the name of a card as described 
+					below. If the card you turn up matches the name you say, you 
+					<em>lose.</em> You win if you get through all 52 cards without 
+					a match.
+				</p>
+				<p>
+					Say face values of cards in order from Ace to King, without 
+					regard to suit. When you reach King, start over at Ace. 
+					That means you recite, "Ace, Two, Three, &hellip;, Queen, King, 
+					Ace, Two&hellip;."
+				</p>
+				<h4>Computer Play</h4>
+				<p>
+					When you click the Play button, the computer does all the work, 
+					randomly shuffling a deck of cards and displaying them one at 
+					a time till the game ends because you win or lose.
+				</p>
+				<p>
+					Winning happens surprisingly infrequently. It's fun to see 
+					how many plays are needed to win!
+				</p>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<!-- JS for Rich's Solitaire -->
+		<script src="/js/richs-solitaire.js"></script>
+		
+	</body>
+	
+</html>
