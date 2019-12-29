@@ -13,7 +13,7 @@ Folders:
 
     /css
         seemikereact.css
-            CSS for SeeMikeReact,com
+            CSS for SeeMikeReact.com
             
     /html
         index.html
